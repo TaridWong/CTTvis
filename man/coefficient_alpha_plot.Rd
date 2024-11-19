@@ -17,7 +17,9 @@ coefficient_alpha_plot(responses, title = "Coefficient Alpha", alpha_round = 3)
 A data frame sorted by coefficient alpha if dropped in ascending order. A plot of coefficient alpha of each item in relation to the overall coefficient alpha.
 }
 \description{
-plotting results of coefficient alpha analysis from the Classical test theory framework. Items that increase the overall coefficient alpha when dropped will be shown aboe the overall alpha line.
+plotting results of coefficient alpha analysis from the Classical test theory framework.
+Items that increase the overall coefficient alpha when dropped will be shown above the overall alpha line.
+This helps identifying items that could be revised or removed based on its influence to unidimensional coefficient alpha reliability of the test.
 }
 \examples{
 

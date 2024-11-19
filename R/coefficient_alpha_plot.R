@@ -1,6 +1,8 @@
 #' @title coefficient_alpha_visualization
 #'
-#' @description plotting results of coefficient alpha analysis from the Classical test theory framework. Items that increase the overall coefficient alpha when dropped will be shown aboe the overall alpha line.
+#' @description plotting results of coefficient alpha analysis from the Classical test theory framework.
+#' Items that increase the overall coefficient alpha when dropped will be shown above the overall alpha line.
+#' This helps identifying items that could be revised or removed based on its influence to unidimensional coefficient alpha reliability of the test.
 #'
 #' @param responses A dichotompus item response object (a dataframe or a matrix)
 #' @param title Title of the plot
@@ -30,7 +32,7 @@ coefficient_alpha_plot <-
     overall_alpha = ctt.analysis$alpha
 
     test_item.total <- data.frame(item = 1:ctt.analysis$nItem ,
-                                  alpha_if_dropped = item_parameter_x$itemReport$alphaIfDeleted)
+                                  alpha_if_dropped = ctt.analysis$itemReport$alphaIfDeleted)
 
     plot(test_item.total,
          main = title,  # Use the title parameter here
