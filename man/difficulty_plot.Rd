@@ -12,7 +12,7 @@ difficulty_plot(
 )
 }
 \arguments{
-\item{responses}{A dichotompus item response object (a dataframe or a matrix)}
+\item{responses}{A dichotomous item response object (a dataframe or a matrix)}
 
 \item{title}{Title of the plot}
 

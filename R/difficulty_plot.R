@@ -2,7 +2,7 @@
 #'
 #' @description plotting results of item difficulty analysis from the Classical test theory framework
 #'
-#' @param responses A dichotompus item response object (a dataframe or a matrix)
+#' @param responses A dichotomous item response object (a dataframe or a matrix)
 #' @param title Title of the plot
 #' @param easyFlag threshold of the easy item
 #' @param hardFlag threshold of the hard item
