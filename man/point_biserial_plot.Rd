@@ -27,7 +27,7 @@ plotting results of item discrimination analysis from the Classical test theory 
 
 data(dichotomous_response)
 
-# To plot item difficulty with easyFlag of .9 and hardFlag of .5
+# To plot item discrimination with pBis threshol of .20.
 
 point_biserial_plot(responses = dichotomous_response, title = "Item Discrimination Plot", pBis_threshold = 0.20)
 

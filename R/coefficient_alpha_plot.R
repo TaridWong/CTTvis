@@ -4,6 +4,9 @@
 #' Items that increase the overall coefficient alpha when dropped will be shown above the overall alpha line.
 #' This helps identifying items that could be revised or removed based on its influence to unidimensional coefficient alpha reliability of the test.
 #'
+#' This function can also be used with polytomous item responses.
+#' However, it is recommended for users to perform reverse coding as necessary before implementing this function.
+#'
 #' @param responses A dichotompus item response object (a dataframe or a matrix)
 #' @param title Title of the plot
 #' @param alpha_round Rounding option for coefficient alpha. default to 4 decimal points.
@@ -11,11 +14,11 @@
 #' @return A data frame sorted by coefficient alpha if dropped in ascending order. A plot of coefficient alpha of each item in relation to the overall coefficient alpha.
 #' @examples
 #'
-#' data(dichotomous_response)
+#' data(reliability_df)
 #'
-#' # To plot item difficulty with easyFlag of .9 and hardFlag of .5
+#' # To plot coefficient alpha with the overall alpha rounding of 3 decimal places
 #'
-#' coefficient_alpha_plot(responses = dichotomous_response, title = "Coefficient Alpha Plot", alpha_round = 4)
+#' coefficient_alpha_plot(responses = reliability_df, title = "Coefficient Alpha Plot", alpha_round = 3)
 #'
 #' @export
 #' @importFrom CTT "itemAnalysis"
