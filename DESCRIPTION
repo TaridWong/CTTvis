@@ -7,7 +7,6 @@ Authors@R: person(given = "Tarid",
                     role = c("aut", "cre", "cph"),
                     email = "taridwongvorachan@gmail.com",
                     comment = c(ORCID = "0000-0002-9622-3780"))
-Maintainer: Tarid Wongvorachan <Taridwongvorachan@gmail.com>
 Description: Visualizes results of item analysis such as item difficulty, 
     item discrimination, and coefficient alpha for ease of result communication.
 License: GPL-3
