@@ -1,10 +1,14 @@
 Package: CTTvis
 Type: Package
-Title: Visualize Item Metrics Of The Classical Test Theory Framework
+Title: Visualize Item Metrics of the Classical Test Theory Framework
 Version: 0.1.0
-Author: Tarid Wongvorachan [aut, cre, cph] (<https://orcid.org/0000-0002-9622-3780>)
+Authors@R: person(given = "Tarid",
+                    family = "Wongvorachan",
+                    role = c("aut", "cre", "cph"),
+                    email = "taridwongvorachan@gmail.com",
+                    comment = c(ORCID = "0000-0002-9622-3780"))
 Maintainer: Tarid Wongvorachan <Taridwongvorachan@gmail.com>
-Description: This package visualizes results of item analysis such as item difficulty, 
+Description: Visualizes results of item analysis such as item difficulty, 
     item discrimination, and coefficient alpha for ease of result communication.
 License: GPL-3
 URL: https://github.com/TaridWong/CTTvis
