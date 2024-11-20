@@ -18,18 +18,21 @@
 #'
 #' # To plot coefficient alpha with the overall alpha rounding of 3 decimal places
 #'
-#' coefficient_alpha_plot(responses = reliability_df, title = "Coefficient Alpha Plot", alpha_round = 3)
+#' coefficient_alpha_plot(responses = reliability_df,
+#'       title = "Coefficient Alpha Plot", alpha_round = 3)
 #'
 #' @export
 #' @importFrom CTT "itemAnalysis"
+#' @importFrom graphics abline text
 
 coefficient_alpha_plot <-
   function(responses, title = "Coefficient Alpha", alpha_round = 3)
   {
 
     # Perform CTT analysis
-    require(CTT, warn.conflicts = FALSE, quietly = TRUE)
-    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE, NA.Delete=TRUE, pBisFlag = .20,  bisFlag = .20, flagStyle = c("X",""))
+    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE,
+                                      NA.Delete=TRUE, pBisFlag = .20,
+                                      bisFlag = .20, flagStyle = c("X",""))
 
     # Extract overall alpha and alpha if dropped
     overall_alpha = ctt.analysis$alpha

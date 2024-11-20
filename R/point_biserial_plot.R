@@ -13,10 +13,12 @@
 #'
 #' # To plot item discrimination with pBis threshol of .20.
 #'
-#' point_biserial_plot(responses = dichotomous_response, title = "Item Discrimination Plot", pBis_threshold = 0.20)
+#' point_biserial_plot(responses = dichotomous_response,
+#'       title = "Item Discrimination Plot", pBis_threshold = 0.20)
 #'
 #' @export
 #' @importFrom CTT "itemAnalysis"
+#' @importFrom graphics abline text
 
 point_biserial_plot <-
   function(responses, title = "Item Discrimination", pBis_threshold = 0.20)
@@ -24,8 +26,9 @@ point_biserial_plot <-
     # CRITICAL VALUES
     cvpb = pBis_threshold
 
-    require(CTT, warn.conflicts = FALSE, quietly = TRUE)
-    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE, NA.Delete=TRUE, pBisFlag = .20,  bisFlag = .20, flagStyle = c("X",""))
+    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE,
+                                      NA.Delete=TRUE, pBisFlag = .20,
+                                      bisFlag = .20, flagStyle = c("X",""))
 
     test_item.total <- data.frame(item = 1:ctt.analysis$nItem ,
                                   point_biserial = ctt.analysis$itemReport$pBis)

@@ -10,7 +10,7 @@ Description: This package visualizes results of item analysis such as item diffi
 License: GPL-3
 URL: https://github.com/TaridWong/CTTvis
 Depends:
-    R (>= 4.3.2)
+    R (>= 4.3)
 Imports:
     CTT (>= 2.3.3)
 Encoding: UTF-8

@@ -29,6 +29,7 @@ data(dichotomous_response)
 
 # To plot item discrimination with pBis threshol of .20.
 
-point_biserial_plot(responses = dichotomous_response, title = "Item Discrimination Plot", pBis_threshold = 0.20)
+point_biserial_plot(responses = dichotomous_response,
+      title = "Item Discrimination Plot", pBis_threshold = 0.20)
 
 }

@@ -1,9 +1,8 @@
 library(testthat)        # load testthat package
 
-devtools::load_all()
 library(CTTvis)       # load the package
 
-context("check-output")  # Our file is called "test-check_output.R"
+context("test-output")  # Our file is called "test-check_output.R"
 
 data("dichotomous_response")
 

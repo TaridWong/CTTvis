@@ -30,6 +30,7 @@ data(reliability_df)
 
 # To plot coefficient alpha with the overall alpha rounding of 3 decimal places
 
-coefficient_alpha_plot(responses = reliability_df, title = "Coefficient Alpha Plot", alpha_round = 3)
+coefficient_alpha_plot(responses = reliability_df,
+      title = "Coefficient Alpha Plot", alpha_round = 3)
 
 }

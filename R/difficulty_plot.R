@@ -14,10 +14,12 @@
 #'
 #' # To plot item difficulty with easyFlag of .9 and hardFlag of .5
 #'
-#' difficulty_plot(responses = dichotomous_response, title = "Item Difficulty Plot", easyFlag = .90, hardFlag = .50)
+#' difficulty_plot(responses = dichotomous_response,
+#'       title = "Item Difficulty Plot", easyFlag = .90, hardFlag = .50)
 #'
 #' @export
 #' @importFrom CTT "itemAnalysis"
+#' @importFrom graphics abline text
 
 difficulty_plot <-
   function(responses, title = "Item Difficulty", easyFlag = .90, hardFlag = .50)
@@ -26,8 +28,9 @@ difficulty_plot <-
     cveasy = easyFlag
     cvhard = hardFlag
 
-    require(CTT, warn.conflicts = FALSE, quietly = TRUE)
-    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE, NA.Delete=TRUE, pBisFlag = .20,  bisFlag = .20, flagStyle = c("X",""))
+    ctt.analysis <- CTT::itemAnalysis(responses, itemReport=TRUE,
+                                      NA.Delete=TRUE, pBisFlag = .20,
+                                      bisFlag = .20, flagStyle = c("X",""))
 
     difficulty_value <- data.frame(item = 1:ctt.analysis$nItem ,
                                    difficulty = ctt.analysis$itemReport$itemMean)
@@ -47,7 +50,7 @@ difficulty_plot <-
     abline(h = cvhard, col = "red")
 
     outlier <- data.matrix(subset(difficulty_value,
-                                  subset = difficulty_value[,2] > cveasy | difficulty_value[,2] < cvhard))
+               subset = difficulty_value[,2] > cveasy | difficulty_value[,2] < cvhard))
 
     text(outlier, paste("i", outlier[,1], sep = ""), col = "red", cex = .7)
 

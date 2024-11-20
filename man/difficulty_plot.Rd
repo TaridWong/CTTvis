@@ -32,6 +32,7 @@ data(dichotomous_response)
 
 # To plot item difficulty with easyFlag of .9 and hardFlag of .5
 
-difficulty_plot(responses = dichotomous_response, title = "Item Difficulty Plot", easyFlag = .90, hardFlag = .50)
+difficulty_plot(responses = dichotomous_response,
+      title = "Item Difficulty Plot", easyFlag = .90, hardFlag = .50)
 
 }
