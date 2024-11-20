@@ -3,7 +3,7 @@ Type: Package
 Title: Visualize Item Metrics Of The Classical Test Theory Framework
 Version: 0.1.0
 Author: c(
-    person("Tarid", "Wongvorachan", email = "Taridwongvorachan@gmail.com", role = c("cre","aut"))
+    person("Tarid", "Wongvorachan", email = "Taridwongvorachan@gmail.com", role = c("cre","aut","cph") (<https://orcid.org/0000-0002-9622-3780>))
 Maintainer: Tarid Wongvorachan <Taridwongvorachan@gmail.com>
 Description: This package visualizes results of item analysis such as item difficulty, 
     item discrimination, and coefficient alpha for ease of result communication.

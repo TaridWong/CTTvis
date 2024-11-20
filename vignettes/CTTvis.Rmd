@@ -31,7 +31,7 @@ data(dichotomous_response)
 difficulty_plot(responses = dichotomous_response, title = "Item Difficulty Plot", easyFlag = .80, hardFlag = .60)
 ```
 
-For the `point_biserial_plot` function, you could adjust your point-biserial correlation (pBis) threshold as well. For example, ff you want the pBis threshold to be .3, you could configure the `pBis_threshold` as follows:
+For the `point_biserial_plot` function, you could adjust your point-biserial correlation (pBis) threshold as well. For example, if you want the pBis threshold to be .3, you could configure the `pBis_threshold` as follows:
 
 ```{r}
 point_biserial_plot(responses = dichotomous_response, title = "Item Discrimination Plot", pBis_threshold = 0.30)
@@ -39,7 +39,7 @@ point_biserial_plot(responses = dichotomous_response, title = "Item Discriminati
 
 To demonstrate the `coefficient_alpha_plot` function, we need to load another built-in dataset called `reliability_df`. This dataset was simulated to test the capability of this function.
 
-The influence of an item when dropped to the overall unidimensional coefficient alpha could vary, hence the option to configure the rounding of overall coefficient alpha. Fir example, if dropping an item increases the overall coefficient alpha by 0.001, then rounding the alpha by three decimal places could allow researchers to see the increase compared to rounding the alpha by two decimal points.
+The influence of an item when dropped to the overall unidimensional coefficient alpha could vary, hence the option to configure the rounding of overall coefficient alpha. For example, if dropping an item increases the overall coefficient alpha by 0.001, then rounding the alpha by three decimal places could allow researchers to see the increase compared to rounding the alpha by two decimal points.
 
 The following demonstration rounds the overall alpha by four decimal points. This argument can be adjusted based on the researchers' needs.
 
