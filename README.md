@@ -1,4 +1,6 @@
 ### R/CTTvis: Visualize Item Metrics Of The Classical Test Theory Framework
+`r badge_codecov("https://github.com/TaridWong/CTTvis")`
+
 [Tarid Wongvorachan](https://taridwong.github.io/)
 
 <img src="https://github.com/TaridWong/CTTvis/blob/main/hexlogo.png" alt="A hexagon logo with writing CTTvis" width="160" />
