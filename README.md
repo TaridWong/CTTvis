@@ -1,12 +1,6 @@
 ### R/CTTvis: Visualize Item Metrics Of The Classical Test Theory Framework
 
-[![License: GPL-3 (GNU General Public License version 3)](https://img.shields.io/badge/license-GPL--3 (GNU General Public License version 3)-blue.svg)](https://cran.r-project.org/web/licenses/GPL-3 (GNU General Public License version 3))
-
-[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-
-[![CRAN checks](https://badges.cranchecks.info/summary/CTTvis.svg)](https://cran.r-project.org/web/checks/check_results_CTTvis.html)
-
-[![](https://img.shields.io/badge/devel%20version-0.1.0-green.svg)](https://github.com/CTTvis)
+[![License: GPL-3](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://cran.r-project.org/web/licenses/GPL-3) [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![](https://img.shields.io/badge/devel%20version-0.1.0-green.svg)](https://github.com/CTTvis)
 
 [Tarid Wongvorachan](https://taridwong.github.io/)
 
