@@ -1,10 +1,10 @@
 ### R/CTTvis: Visualize Item Metrics Of The Classical Test Theory Framework
 [Tarid Wongvorachan](https://taridwong.github.io/)
 
-<img src="https://github.com/TaridWong/CTTvis/blob/main/hexlogo.png" alt="A hexagon logo with writing CTTvis" width="150" />
+<img src="https://github.com/TaridWong/CTTvis/blob/main/hexlogo.png" alt="A hexagon logo with writing CTTvis" width="160" />
 
 #### Installation
-Install R/CTTvis from Github using
+Install R/CTTvis from Github using the devtools package
 ```r
 devtools::install_github("TaridWong/CTTvis")
 ```
@@ -22,13 +22,15 @@ On the other hand, items that gets answered correctly 60% of the total test take
 ```r
 data(dichotomous_response)
 
-difficulty_plot(responses = dichotomous_response, title = "Item Difficulty Plot", easyFlag = .80, hardFlag = .60)
+difficulty_plot(responses = dichotomous_response, 
+		title = "Item Difficulty Plot", easyFlag = .80, hardFlag = .60)
 ```
 For the `point_biserial_plot` function, you could adjust your point-biserial correlation (pBis) threshold as well. 
 For example, if you want the pBis threshold to be .3, you could configure the `pBis_threshold` as follows:
 
 ```r
-point_biserial_plot(responses = dichotomous_response, title = "Item Discrimination Plot", pBis_threshold = 0.30)
+point_biserial_plot(responses = dichotomous_response, 
+		title = "Item Discrimination Plot", pBis_threshold = 0.30)
 ```
 To demonstrate the `coefficient_alpha_plot` function, we need to load another built-in dataset called `reliability_df`. 
 This dataset was simulated to test the capability of this function.
@@ -41,7 +43,8 @@ The following demonstration rounds the overall alpha by four decimal points. Thi
 ```r
 data(reliability_df)
 
-coefficient_alpha_plot(responses = reliability_df, title = "Coefficient Alpha Plot", alpha_round = 4)
+coefficient_alpha_plot(responses = reliability_df, 
+		title = "Coefficient Alpha Plot", alpha_round = 4)
 ```
 
 #### Licenses
