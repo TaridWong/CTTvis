@@ -1,6 +1,8 @@
 ### R/CTTvis: Visualize Item Metrics Of The Classical Test Theory Framework
 [Tarid Wongvorachan](https://taridwong.github.io/)
 
+![A hexagon logo with writing CTTvis](https://github.com/TaridWong/CTTvis/blob/main/hexlogo.png)
+
 #### Installation
 Install R/CTTvis from Github using
 ```r
