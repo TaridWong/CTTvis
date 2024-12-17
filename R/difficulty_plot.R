@@ -51,10 +51,17 @@ difficulty_plot <-
 
     item_names <- colnames(responses)  # Extract the item names
 
+    # Define a small vertical offset (e.g., 0.05)
+    offset <- 0.05
+
     outlier <- data.matrix(subset(difficulty_value,
                                   subset = difficulty_value[,2] > cveasy | difficulty_value[,2] < cvhard))
 
-    text(outlier, labels = item_names[outlier[,1]], col = "red", cex = 0.7)
+    text(x = outlier[, 1],
+         y = outlier[, 2] + offset,  # Add the offset to the y-coordinate
+         labels = item_names[outlier[, 1]],
+         col = "red",
+         cex = 0.7)
 
     return(difficulty_value[order(difficulty_value$difficulty),])
   }
