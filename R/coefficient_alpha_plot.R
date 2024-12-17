@@ -80,3 +80,4 @@ coefficient_alpha_plot <-
 
     return(test_item.total[order(test_item.total$alpha_if_dropped),])
   }
+
