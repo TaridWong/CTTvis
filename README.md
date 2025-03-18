@@ -4,7 +4,8 @@
 
 [Tarid Wongvorachan](https://taridwong.github.io/)
 
-<img src="https://github.com/TaridWong/CTTvis/blob/main/hexlogo.png" alt="A hexagon logo with writing CTTvis" width="160" />
+<img src="https://github.com/user-attachments/assets/062f76c4-c41b-4730-976c-f042672ad4e7" alt="A hexagon logo with writing CTTvis" width="160" />
+
 
 #### Installation
 Install R/CTTvis from Github using the devtools package
